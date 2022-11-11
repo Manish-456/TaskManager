@@ -1,24 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Main from './components/Main';
+import Update from './components/Update';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+  } from 'react-router-dom'
+import { TaskContextProvider } from './context/taskContext';
+import Toolbar from './components/Toolbar'
+import Footer from './components/Footer'
+import { ToolContextProvider } from './context/tools';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <div>
+
+  <Router>   
+    <ToolContextProvider>
+    <div className="grid">
+     
+      <div className="grid-left">
+  
+ <Toolbar />
+ </div>
+ <div className="grid-aside">
+
+
+     <TaskContextProvider>
+   <Routes>
+    <Route path='/' element={<Main />}/>
+    <Route path='/edit' element={<Update />} />
+    
+   </Routes>
+  </TaskContextProvider>
+   </div>  
+  </div> 
+<Footer />
+</ToolContextProvider>
+  </Router>
+ 
+ </div>
   );
 }
 

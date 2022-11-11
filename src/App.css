@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+.grid{
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+  
+}
+.grid-aside{
+
+  background-color: #0fcbd7;
+}
+.grid-left {
+  border-right: 1px solid black;
+  height: 100%;
+  padding: 2px 5px;
+}
+

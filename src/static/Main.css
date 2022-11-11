@@ -1,0 +1,72 @@
+.container {
+  background: #0fcbd7;
+ 
+ position: relative;
+ text-align: center;
+}
+.inputBox {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  background-color: hsla(166, 20%, 83%, 1);
+  position: relative;
+  top: 28px;
+
+  padding-bottom: 20px;
+  box-shadow: 0.2rem 0.3rem 0.2rem black;
+  border-radius: 10px;
+}
+.h3 {
+  width: 73px;
+  height: 22px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-family: "Comic Sans MS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.btn {
+  background-color: blue;
+  color: white;
+border-radius: 5px;
+margin-top: 15px;
+padding: 2px 8px;
+}
+.input {
+  border-radius: 10px;
+  width: 340px;
+}
+.tasks{
+ margin-top: 50px;
+ margin-bottom: 50px;
+ 
+}
+.msg-para{
+  font-size : 8px;
+  color : green;
+  
+}
+input:invalid{
+  animation : shake 0.3s alternate;
+}
+@keyframes shake {
+  25%{
+    transform: translateX(5px);
+    color: red;
+  }
+  50%{
+    transform: translateX(-5px);
+    color: red;
+  }
+  75%{
+    transform: translateX(5px);
+    color: red;
+  }
+ 
+  
+}

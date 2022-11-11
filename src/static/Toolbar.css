@@ -1,0 +1,40 @@
+aside{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ gap: 5px;
+ /* margin-left: 20px; */
+background-color: #dddddd;
+}
+
+.red{
+ color: red;
+}
+.green{
+ color: green;
+}
+.purple{
+ color: purple;
+}
+.cyan{
+ color: cyan
+}
+.blue{
+ color: blue
+}
+.items{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ gap: 5px;
+}
+.tools{
+ display: flex;
+ gap: 5px;
+ flex-direction:column;
+}
+.tool{
+ position: relative;
+ left: 20px;
+}

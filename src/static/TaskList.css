@@ -1,0 +1,37 @@
+.Task{
+ font-family: "Comic Sans MS";
+padding: 5px 20px;
+padding-bottom: 5px;
+
+
+}
+.task_list{
+ background-color: hsla(166, 20%, 83%, 1);
+ width: 500px;
+ margin: 5px auto;
+
+}
+
+.flex{
+ display: flex;
+ justify-content: space-between;
+ box-shadow: 0.2rem 0.3rem 0.2rem black;
+}
+.icon {
+ padding-top: 19px;
+ align-items: center;
+ margin-left: 20px;
+ padding-right: 4px;
+ cursor: pointer;
+}
+.icon1{
+ color: green;
+}
+.icon2{
+ color: red
+}
+.task_list:hover{
+position: relative;
+top: 10px;
+background-color: grey;
+}

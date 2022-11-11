@@ -1,0 +1,33 @@
+.check{
+ position: relative;
+ top: 15px;
+ right: 35px;
+}
+.cancel {
+ position: absolute;
+ right: 1px;
+ top: 0px;
+ color: green;
+}
+.btn-success{
+ background-color: green;
+}
+input:invalid{
+ animation : shake 0.3s alternate;
+}
+@keyframes shake {
+ 25%{
+   transform: translateX(5px);
+   color: red;
+ }
+ 50%{
+   transform: translateX(-5px);
+   color: red;
+ }
+ 75%{
+   transform: translateX(5px);
+   color: red;
+ }
+
+ 
+}

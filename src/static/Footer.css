@@ -1,0 +1,9 @@
+.para{
+ font-size: 12px;
+ padding: 5px 10px;
+}
+.footer{
+ background-color: rgb(12, 96, 169);
+ color: rgb(239, 227, 227);
+ text-align: center;
+}
